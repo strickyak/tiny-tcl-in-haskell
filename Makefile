@@ -1,4 +1,4 @@
-all : test run
+all : run test
 
 run: _force
 	ghc --make -XScopedTypeVariables run.hs tcl.hs joy.hs
@@ -10,4 +10,4 @@ test: _force
 _force:
 
 clean:
-	rm *.o *.hi ./run ./test
+	rm -f *.o *.hi ./run ./test
